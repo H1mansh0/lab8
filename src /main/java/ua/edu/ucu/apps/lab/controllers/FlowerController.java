@@ -9,14 +9,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import lombok.Getter;
 import ua.edu.ucu.apps.lab.FlowerService;
 import ua.edu.ucu.apps.lab.flowers.Flower;
 
 
 @RestController
 @RequestMapping("/api/flowers")
+@Getter
 public class FlowerController {
-    final FlowerService flowerService;
+    final private FlowerService flowerService;
 
     @Autowired
     public FlowerController(FlowerService flowerService) {

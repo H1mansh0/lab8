@@ -1,7 +1,9 @@
 package ua.edu.ucu.apps.lab.decorators;
 
+import lombok.Getter;
 import ua.edu.ucu.apps.lab.flowers.Item;
 
+@Getter
 public class ItemDecorator implements Item {
     private Item item;
 

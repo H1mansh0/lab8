@@ -22,17 +22,17 @@ public class DeliveryTest {
 
     @BeforeEach
     public void init() {
-        int price1 = 40;
-        int price2 = 35;
-        double sepalLength1 = 0.8;
-        double sepalLength2 = 0.6;
+        final int priceOne = 40;
+        final int priceTwo = 35;
+        final double sepalLengthOne = 0.8;
+        final double sepalLengthTwo = 0.6;
 
         deliverDHL = new DHLDeliveryStrategy();
         deliverPost = new PostDeliveryStrategy();
         listOfItems = List.of(new Flower(
-            FlowerType.ROSE, price1, sepalLength1, FlowerColor.RED),
+            FlowerType.ROSE, priceOne, sepalLengthOne, FlowerColor.RED),
                         new Flower(
-                    FlowerType.CHAMOMILE, price2, sepalLength2, FlowerColor.BLUE));
+                FlowerType.CHAMOMILE, priceTwo, sepalLengthTwo, FlowerColor.BLUE));
     }
 
     @Test

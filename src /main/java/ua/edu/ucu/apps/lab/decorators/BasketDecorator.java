@@ -1,9 +1,11 @@
 package ua.edu.ucu.apps.lab.decorators;
 
+import lombok.Getter;
 import ua.edu.ucu.apps.lab.flowers.Item;
 
+@Getter
 public class BasketDecorator extends ItemDecorator {
-    final int addPrice = 4;
+    final private int addPrice = 4;
 
     public BasketDecorator(Item item) {
         super(item);

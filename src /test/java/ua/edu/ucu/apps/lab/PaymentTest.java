@@ -7,12 +7,13 @@ import org.junit.jupiter.api.Test;
 import ua.edu.ucu.apps.lab.payment.CreditCartPaymentStrategy;
 import ua.edu.ucu.apps.lab.payment.PayPalPaymentStrategy;
 
+@Getter
 public class PaymentTest {
 
+    final private double priceOf = 123.5;
+    final private double checkingPrice = 123.5;
     private CreditCartPaymentStrategy credit;
     private PayPalPaymentStrategy payPal;
-    final double priceOf = 123.5;
-    final double checkingPrice = 123.5;
 
 
     @BeforeEach
@@ -28,7 +29,6 @@ public class PaymentTest {
 
     @Test
     public void testPayPal() { 
-        double checkingPrice = 123.5;
         Assertions.assertEquals(priceOf, payPal.pay(checkingPrice));
     }
 }
