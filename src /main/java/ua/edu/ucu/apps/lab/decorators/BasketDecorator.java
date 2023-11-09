@@ -3,7 +3,7 @@ package ua.edu.ucu.apps.lab.decorators;
 import ua.edu.ucu.apps.lab.flowers.Item;
 
 public class BasketDecorator extends ItemDecorator {
-    final private int ADDPRICE = 4;
+    final int addPrice = 4;
 
     public BasketDecorator(Item item) {
         super(item);
@@ -11,7 +11,7 @@ public class BasketDecorator extends ItemDecorator {
 
     @Override
     public double price() {
-        return super.price() + ADDPRICE;
+        return super.price() + addPrice;
     }
 
     @Override

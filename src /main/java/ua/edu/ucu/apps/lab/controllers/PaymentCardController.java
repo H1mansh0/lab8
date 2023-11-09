@@ -9,10 +9,10 @@ import ua.edu.ucu.apps.lab.payment.CreditCartPaymentStrategy;
 @RestController
 @RequestMapping("/api/payment")
 public class PaymentCardController {
-    final private double PRICE = 18.8;
+    final double priceOf = 18.8;
 
     @GetMapping("/card")
     public double getPayment() {
-        return new CreditCartPaymentStrategy().pay(PRICE);
+        return new CreditCartPaymentStrategy().pay(priceOf);
     }
 }

@@ -15,13 +15,13 @@ import ua.edu.ucu.apps.lab.flowers.Item;
 @RestController
 @RequestMapping("/api/delivery")
 public class DeliveryPostController {
-    final private int PRICE = 40;
-    final private double SEPLALENGTH = 0.8;
+    final int priceOf = 40;
+    final double sepalLength = 0.8;
 
     @GetMapping("/post")
     public List<Item> getDelivery() {
         return new PostDeliveryStrategy().deliver(
         List.of(new Flower(
-        FlowerType.ROSE, PRICE, SEPLALENGTH, FlowerColor.RED)));
+        FlowerType.ROSE, priceOf, sepalLength, FlowerColor.RED)));
     }
 }
