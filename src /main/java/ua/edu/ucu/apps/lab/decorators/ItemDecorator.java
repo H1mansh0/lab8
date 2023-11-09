@@ -2,7 +2,7 @@ package ua.edu.ucu.apps.lab.decorators;
 
 import ua.edu.ucu.apps.lab.flowers.Item;
 
-public class ItemDecorator implements Item{
+public class ItemDecorator implements Item {
     private Item item;
 
     public ItemDecorator(Item item) {
