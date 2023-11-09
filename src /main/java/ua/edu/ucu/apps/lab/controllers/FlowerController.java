@@ -16,19 +16,20 @@ import ua.edu.ucu.apps.lab.flowers.Flower;
 @RestController
 @RequestMapping("/api/flowers")
 public class FlowerController {
-    final private FlowerService flowerService;
+    final private FlowerService FLOWERSERVICE;
+
     @Autowired
     public FlowerController(FlowerService flowerService) {
-        this.flowerService = flowerService;
+        this.FLOWERSERVICE = flowerService;
     }
 
     @GetMapping("/list")
     public List<Flower> getFlowers() {
-        return flowerService.getFlowers();
+        return FLOWERSERVICE.getFlowers();
     }
 
     @PostMapping("/add")
     public void addFlower(@RequestBody Flower flower) {
-        flowerService.add(flower);
+        FLOWERSERVICE.add(flower);
     }
 }
