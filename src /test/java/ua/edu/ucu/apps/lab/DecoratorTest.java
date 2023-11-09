@@ -12,7 +12,7 @@ import ua.edu.ucu.apps.lab.flowers.Item;
 class DecoratorTest {
 
     @Test
-    public void whenDecoratorsInjectedAtRuntime_thenConfigSuccess() {
+    public void Tester() {
         Item treeOne = new PaperDecorator(new Flower());
         assertEquals(treeOne.getDescription(),
                 "Flower in paper");

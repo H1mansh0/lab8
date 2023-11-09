@@ -11,7 +11,7 @@ import ua.edu.ucu.apps.lab.payment.PayPalPaymentStrategy;
 @RequestMapping("/api/payment")
 @Getter
 public class PaymentPayPalController {
-    final private double priceOf = 182.8;
+    private final double priceOf = 182.8;
 
     @GetMapping("/paypal")
     public double getPayment() {

@@ -9,9 +9,8 @@ import ua.edu.ucu.apps.lab.payment.PayPalPaymentStrategy;
 
 @Getter
 public class PaymentTest {
-
-    final private double priceOf = 123.5;
-    final private double checkingPrice = 123.5;
+    private final double priceOf = 123.5;
+    private final double checkingPrice = 123.5;
     private CreditCartPaymentStrategy credit;
     private PayPalPaymentStrategy payPal;
 

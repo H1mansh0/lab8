@@ -5,7 +5,7 @@ import ua.edu.ucu.apps.lab.flowers.Item;
 
 @Getter
 public class BasketDecorator extends ItemDecorator {
-    final private int addPrice = 4;
+    private final int addPrice = 4;
 
     public BasketDecorator(Item item) {
         super(item);

@@ -11,7 +11,7 @@ import ua.edu.ucu.apps.lab.payment.CreditCartPaymentStrategy;
 @RequestMapping("/api/payment")
 @Getter
 public class PaymentCardController {
-    final private double priceOf = 18.8;
+    private final double priceOf = 18.8;
 
     @GetMapping("/card")
     public double getPayment() {

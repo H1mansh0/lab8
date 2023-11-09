@@ -17,8 +17,8 @@ import ua.edu.ucu.apps.lab.flowers.Item;
 @RequestMapping("/api/delivery")
 @Getter
 public class DeliveryPostController {
-    final private int priceOf = 40;
-    final private double sepalLength = 0.8;
+    private final int priceOf = 40;
+    private final double sepalLength = 0.8;
 
     @GetMapping("/post")
     public List<Item> getDelivery() {

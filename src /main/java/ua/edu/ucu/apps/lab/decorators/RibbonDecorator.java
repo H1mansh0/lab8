@@ -4,7 +4,7 @@ import ua.edu.ucu.apps.lab.flowers.Item;
 
 @Getter
 public class RibbonDecorator extends ItemDecorator {
-    final private int addPrice = 40;
+    private final int addPrice = 40;
 
     public RibbonDecorator(Item item) {
         super(item);

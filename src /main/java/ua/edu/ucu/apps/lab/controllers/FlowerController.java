@@ -18,7 +18,7 @@ import ua.edu.ucu.apps.lab.flowers.Flower;
 @RequestMapping("/api/flowers")
 @Getter
 public class FlowerController {
-    final private FlowerService flowerService;
+    private final FlowerService flowerService;
 
     @Autowired
     public FlowerController(FlowerService flowerService) {
