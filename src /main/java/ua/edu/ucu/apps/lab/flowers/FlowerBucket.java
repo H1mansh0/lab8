@@ -3,7 +3,7 @@ package ua.edu.ucu.apps.lab.flowers;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FlowerBucket extends Item {
+public class FlowerBucket implements Item {
     private List<FlowerPack> flowerPacks = new ArrayList<>();
 
     public double price() {

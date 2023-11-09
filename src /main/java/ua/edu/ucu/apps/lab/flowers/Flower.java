@@ -11,7 +11,7 @@ import lombok.ToString;
 
 @Setter @NoArgsConstructor @ToString
 @Entity
-public class Flower extends Item {
+public class Flower implements Item {
     @Id
     private int id;
     @Getter
@@ -50,6 +50,6 @@ public class Flower extends Item {
 
     @Override
     public String getDescription() {
-        return this.toString();
+        return "Flower";
     }
 }
