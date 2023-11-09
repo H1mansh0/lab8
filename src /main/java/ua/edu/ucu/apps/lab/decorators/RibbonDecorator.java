@@ -2,7 +2,7 @@ package ua.edu.ucu.apps.lab.decorators;
 
 import ua.edu.ucu.apps.lab.flowers.Item;
 
-public class RibbonDecorator extends ItemDecorator{
+public class RibbonDecorator extends ItemDecorator {
     final private static int addPrice = 40;
 
     public RibbonDecorator(Item item) {
